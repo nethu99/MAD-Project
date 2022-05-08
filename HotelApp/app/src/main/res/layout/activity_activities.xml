@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:gravity="top">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:name="com.example.android.fragmentexample.SimpleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/activity_confirmation_fragment" >
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:src="@drawable/homeicon"
+        tools:ignore="ContentDescription,KeyboardInaccessibleWidget" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="332dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/kayaking2"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Nine Arch Bridge"
+                android:textColor="#803333"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/description_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="The Nine Arch Bridge, also known as the ‘Bridge in the Sky’ was constructed by connecting two bog mountains when constructing the Badulla – Colombo railway. This bridge is 300 feet in length, 25 feet in width and 80-100 feet in height. It is one of the best examples of colonial-era railway construction in the country"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="163dp"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/imgBtnMore"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/description_text2Service"
+                android:layout_margin="5dp"
+                android:background="@drawable/plus"
+                android:clickable="true"
+                tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+
+            <ImageButton
+                android:id="@+id/imgBtnLess"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/description_text2Service"
+                android:layout_margin="5dp"
+                android:background="@drawable/minus"
+                android:clickable="true"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="332dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/skiing"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Seegiriya"
+                    android:textAlignment="center"
+                    android:textColor="#803333"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/description_text2Service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:maxLines="2"
+                    android:padding="15dp"
+                    android:text="Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka."
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="163dp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnMore1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/description_text2Service"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/plus"
+                    android:clickable="true"
+                    tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+
+                <ImageButton
+                    android:id="@+id/imgBtnLess1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/description_text2Service"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/minus"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="332dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/whistler3"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Galle Fort"
+                    android:textAlignment="center"
+                    android:textColor="#803333"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/description_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:maxLines="2"
+                    android:padding="15dp"
+                    android:text="The Galle Fort, or Dutch Fort as it is also known, is a fortification first built by the Portuguese on the Southwestern coast of Sri Lanka."
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="163dp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnMore3"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/description_text2Service"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/plus"
+                    android:clickable="true"
+                    tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+
+                <ImageButton
+                    android:id="@+id/imgBtnLess3"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/description_text2Service"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/minus"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription,KeyboardInaccessibleWidget,ObsoleteLayoutParam" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
