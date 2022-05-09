@@ -1,6 +1,14 @@
-# MAD-Project
+Group 01.2 
 
-#Hotel Booking App
+ MAD-Project
+ 
+Team - SIXTY9
+
+Project Name - Hotel Booking App.
+
+
+
+
 
 #2nd Year 2nd sem
 
