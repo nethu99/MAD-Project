@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/blue_bg"/>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            tools:ignore="UseCompoundDrawables"
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_icon"
+                android:contentDescription="image" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/lightblue"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" Email"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:background="@drawable/overlay"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                    android:ems="10"
+                    app:passwordToggleEnabled="true"
+                    android:hint=" Password"
+                    android:textColorHighlight="@color/blue"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textColorHint="@color/lightblue"
+                    android:inputType="textPassword"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="10dp"
+                    android:layout_margin="15dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/overlay"
+                    android:drawableStart="@drawable/ic_baseline_vpn_key_24" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_below="@+id/passwordview"
+                android:layout_width="wrap_content"
+                android:text="Remember Password!"
+                android:layout_height="wrap_content"
+                android:id="@+id/rempasswordcheckbox"
+                android:layout_x="23dp"
+                android:layout_y="200dp" />
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="5dp"
+                android:text="@string/forgot"
+                android:onClick="forgetpassword"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/userlogin"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Login"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/consumerlogin"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:onClick="signup"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/button"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
